@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Geometry Genius</title>
+    <!-- daisyUI and tailwind CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -13,7 +14,7 @@
 <body class="w-11/12 mx-auto">
     <header>
         <nav>
-            <div class="navbar bg-base-100 bg-sky-200 lg:my-10 px-8">
+            <div class="navbar bg-base-100 bg-sky-200 lg:my-10 px-8 py-10">
                 <div class="navbar-start">
                     <h1>
                         <span class="text-3xl font-semibold text-black">Interactive</span>
@@ -22,7 +23,7 @@
                     </h1>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn normal-case text-xl bg-sky-500 hover:bg-sky-700 border-sky-700 px-12">Blog</a>
+                    <a id="blog-btn" class="btn normal-case text-xl bg-sky-500 hover:bg-sky-700 border-sky-700 px-12">Blog</a>
                 </div>
             </div>
         </nav>
@@ -172,15 +173,14 @@
                 <div class="lg:w-[25%] w-full border h-[100vh]">
                     <h1 class="text-3xl text-center underline underline-offset-8 mt-5">Area Calculation</h1>
                     <div>
-                        <ul id="table-container" class="text-xl text-center mt-6">
-
-                        </ul>
+                        <ul id="table-container" class="text-xl text-center mt-6"></ul>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- JavaScript CDN -->
     <script src="./utilities.js"></script>
     <script src="./app.js"></script>
 </body>

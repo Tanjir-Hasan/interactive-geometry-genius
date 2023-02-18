@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ---------- tailwind CDN---------- -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title> Blog</title>
+</head>
+
+<body class="bg-sky-200 p-10">
+    <header>
+        <h1 class="text-center text-5xl font-bold"><span class="text-orange-600">Q&A</span> about <span class="text-green-500">JavaScript</span></h1>
+    </header>
+
+    <main>
+        <!------------Q&A Section starts------------ -->
+        <section class="p-10">
+            <div>
+                <p class="text-2xl font-bold m-4">Question: 1</p>
+                <p class="text-2xl italic font-medium text-red-500">
+                    What is DOM and what is the purpose of DOM? </p>
+                <p class="text-xl font-bold py-2 text-cyan-500 underline underline-offset-8">Answer:</p>
+                <p>Definition:
+                    The full form of the DOM is "Document Object Model". It's an Application Programming
+                    Interface which is Cross Platform and Language Independent. It modifies documents structure, style,
+                    content and represent HTML, XHTML, XML Document as a tree.</p>
+                <br>
+                <p>Purpose of DOM: </p>
+                <br>
+                <ol>
+                    <li>DOM provides the access of a document like HTML, XHTML and XML.</li>
+                    <li>DOM makes a platform to be language neutral.</li>
+                    <li>DOM provides the dynamic usage of the script.</li>
+                    <li>DOM provides a way to update the document’s content, structure and style.</li>
+                    <li>DOM is used with the language and used to create the objects that can be used as a model to
+                        allow the interface to be developed easily.</li>
+                </ol>
+            </div>
+            <br>
+            <div>
+                <p class="text-2xl font-bold m-4">Question: 2</p>
+                <p class="text-2xl italic font-medium text-red-500">
+                    How will you select HTML elements using DOM? Name the DOM methods.</p>
+                <p class="text-xl font-bold text-cyan-500 py-2 underline underline-offset-8">Answer:</p>
+                <p>There are some methods to select HTML elements using DOM, with those methods I would select HTML
+                    elements. Some frequently used methods are given below:</p>
+                <br>
+                <p class="font-medium">The single-element selectors are:</p>
+                <ul>
+                    <li>getElementById()</li>
+                    <li>querySelector()</li>
+                </ul>
+                <p class="font-medium">The multiple elements selectors are:</p>
+                <ol>
+                    <li>getElementsByTagName()</li>
+                    <li>getElementsByClassName()</li>
+                    <li>querySelectorAll()</li>
+                </ol>
+            </div>
+            <br>
+            <div>
+                <p class="text-2xl font-bold m-4">Question: 3</p>
+                <p class="text-2xl italic font-medium text-red-500">
+                    What is event bubble? </p>
+                <p class="font-bold text-cyan-500 py-2 underline underline-offset-8">Answer:</p>
+                <p>Definition: When an element receives an event, and that event is transmitted to its parent elements in the DOM
+                    tree until it gets to the root element. This concept is called event bubble. </p>
+            </div>
+            <br>
+            <div>
+                <p class="text-2xl font-bold m-4">Question: 4</p>
+                <p class="text-2xl italic font-medium text-red-500">What is a callback function and why will you use it? </p>
+                <p class="text-xl font-bold text-cyan-500 py-2 underline underline-offset-8">Answer:</p>
+                <p>When a function is sent as an argument then it executes after the main function has been executed
+                    it’s called a Callback Function. The callback function is very useful for its efficiency. Callback
+                    Functions give a way to you to set up your program in such a way that events will trigger the
+                    correct code. It’s very common in programs with GUIs where users can click on any element on the UI
+                    and the appropriate code will be run.</p>
+            </div>
+        </section>
+        <!-- ----------------Q&A Section end------------ -->
+    </main>
+</body>
+
+</html>

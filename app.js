@@ -10,7 +10,6 @@ document.getElementById("card-one-btn").addEventListener("click", function () {
     } else {
         const cardOneSum = parseFloat((0.5 * cardOneBase * cardOneHeight).toFixed(2));
         serial += 1;
-    
         resultField(serial, element, cardOneSum);
     }
 })
@@ -26,7 +25,6 @@ document.getElementById("card-two-btn").addEventListener("click", function () {
     } else {
         const cardTwoSum = parseFloat((cardTwoBase * cardTwoHeight).toFixed(2));
         serial += 1;
-    
         resultField(serial, element, cardTwoSum);
     }
 })
@@ -42,7 +40,6 @@ document.getElementById("card-three-btn").addEventListener("click", function () 
     } else {
         const cardThreeSum = parseFloat((cardThreeBase * cardThreeHeight).toFixed(2));
         serial += 1;
-    
         resultField(serial, element, cardThreeSum);
     }
 })
@@ -58,7 +55,6 @@ document.getElementById("card-four-btn").addEventListener("click", function () {
     } else {
         const cardFourSum = parseFloat((cardFourBase * cardFourHeight).toFixed(2));
         serial += 1;
-    
         resultField(serial, element, cardFourSum);
     }
 })
@@ -74,7 +70,6 @@ document.getElementById("card-fifth-btn").addEventListener("click", function () 
     } else {
         const cardFifthSum = parseFloat((cardFifthBase * cardFifthHeight).toFixed(2));
         serial += 1;
-    
         resultField(serial, element, cardFifthSum);
     }
 })
@@ -90,11 +85,11 @@ document.getElementById("card-six-btn").addEventListener("click", function () {
     } else {
         const cardSixthSum = parseFloat((3.14 * cardSixthBase * cardSixthHeight).toFixed(2));
         serial += 1;
-    
         resultField(serial, element, cardSixthSum);
     }
 })
 
+// Random Hover
 document.getElementById("card-id-one").addEventListener("mouseenter", function () {
     const randomColor = Math.floor(Math.random() * 16777215).toString(16);
     document.getElementById("card-id-one").style.background = "#" + randomColor;
@@ -118,4 +113,9 @@ document.getElementById("card-id-five").addEventListener("mouseenter", function 
 document.getElementById("card-id-six").addEventListener("mouseenter", function () {
     const randomColor = Math.floor(Math.random() * 16777215).toString(16);
     document.getElementById("card-id-six").style.background = "#" + randomColor;
+})
+
+// blog
+document.getElementById("blog-btn").addEventListener('click', function () {
+    window.location.href = 'blog.html';
 })

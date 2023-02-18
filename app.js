@@ -1,13 +1,34 @@
 let serial = 0;
+// 1st card
 document.getElementById("card-one-btn").addEventListener("click", function () {
     const element = getTextElement("problem-one-title");
     const cardOneBase = document.getElementById("card-one-base").value;
     const cardOneHeight = document.getElementById("card-one-height").value;
 
-    const cardOneSum = parseFloat((0.5 * cardOneBase * cardOneHeight).toFixed(2));
-    serial += 1;
+    if (isNaN(cardOneBase) || isNaN(cardOneHeight) || cardOneBase <= 0 || cardOneHeight <= 0) {
+        alert("Please provide a positive number");
+    } else {
+        const cardOneSum = parseFloat((0.5 * cardOneBase * cardOneHeight).toFixed(2));
+        serial += 1;
+    
+        resultField(serial, element, cardOneSum);
+    }
+})
 
-    resultField(serial, element, cardOneSum)
+// 2nd card
+document.getElementById("card-two-btn").addEventListener("click", function () {
+    const element = getTextElement("problem-two-title");
+    const cardTwoBase = document.getElementById("card-two-base").value;
+    const cardTwoHeight = document.getElementById("card-two-height").value;
+
+    if (isNaN(cardTwoBase) || isNaN(cardTwoHeight) || cardTwoBase <= 0 || cardTwoHeight <= 0) {
+        alert("Please provide a positive number");
+    } else {
+        const cardTwoSum = parseFloat((cardTwoBase * cardTwoHeight).toFixed(2));
+        serial += 1;
+    
+        resultField(serial, element, cardTwoSum);
+    }
 })
 
 document.getElementById("card-id-one").addEventListener("mouseenter", function () {

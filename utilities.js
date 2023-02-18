@@ -5,12 +5,14 @@ function getTextElement(id) {
 
 function resultField(serial, title, problemResult) {
     const calculationField = document.getElementById("table-container");
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-    <td>${serial}</td>
-    <td>${title}</td>
-    <td>${problemResult}cm<sup>2</sup></td>
-    <td><button class="text-white bg-cyan-600 hover:bg-cyan-700 w-full my-3 px-2 rounded-md">Convert to m<sup>2</sup></button></td>
+    const li = document.createElement("li");
+    li.innerHTML = `
+    <div>
+    ${serial}. 
+    ${title}
+    ${problemResult}cm<sup>2</sup>
+     <button class="text-white bg-cyan-600 hover:bg-cyan-700 my-3 px-2 rounded-md">Convert to m<sup>2</sup></button>
+    </div>
     `
-    calculationField.appendChild(tr);
+    calculationField.appendChild(li);
 }

@@ -4,6 +4,8 @@ document.getElementById("card-one-btn").addEventListener("click", function () {
     const element = getTextElement("problem-one-title");
     const cardOneBase = document.getElementById("card-one-base").value;
     const cardOneHeight = document.getElementById("card-one-height").value;
+    clearInputField("card-one-base");
+    clearInputField("card-one-height");
 
     if (isNaN(cardOneBase) || isNaN(cardOneHeight) || cardOneBase <= 0 || cardOneHeight <= 0) {
         alert("Please provide a positive number");
@@ -19,6 +21,8 @@ document.getElementById("card-two-btn").addEventListener("click", function () {
     const element = getTextElement("problem-two-title");
     const cardTwoBase = document.getElementById("card-two-base").value;
     const cardTwoHeight = document.getElementById("card-two-height").value;
+    clearInputField("card-two-base");
+    clearInputField("card-two-height");
 
     if (isNaN(cardTwoBase) || isNaN(cardTwoHeight) || cardTwoBase <= 0 || cardTwoHeight <= 0) {
         alert("Please provide a positive number");
@@ -34,6 +38,8 @@ document.getElementById("card-three-btn").addEventListener("click", function () 
     const element = getTextElement("problem-three-title");
     const cardThreeBase = document.getElementById("card-three-base").value;
     const cardThreeHeight = document.getElementById("card-three-height").value;
+    clearInputField("card-three-base");
+    clearInputField("card-three-height");
 
     if (isNaN(cardThreeBase) || isNaN(cardThreeHeight) || cardThreeBase <= 0 || cardThreeHeight <= 0) {
         alert("Please provide a positive number");
@@ -49,6 +55,8 @@ document.getElementById("card-four-btn").addEventListener("click", function () {
     const element = getTextElement("problem-four-title");
     const cardFourBase = document.getElementById("card-four-base").value;
     const cardFourHeight = document.getElementById("card-four-height").value;
+    clearInputField("card-four-base");
+    clearInputField("card-four-height");
 
     if (isNaN(cardFourBase) || isNaN(cardFourHeight) || cardFourBase <= 0 || cardFourHeight <= 0) {
         alert("Please provide a positive number");
@@ -64,6 +72,8 @@ document.getElementById("card-fifth-btn").addEventListener("click", function () 
     const element = getTextElement("problem-fifth-title");
     const cardFifthBase = document.getElementById("card-fifth-base").value;
     const cardFifthHeight = document.getElementById("card-fifth-height").value;
+    clearInputField("card-fifth-base");
+    clearInputField("card-fifth-height");
 
     if (isNaN(cardFifthBase) || isNaN(cardFifthHeight) || cardFifthBase <= 0 || cardFifthHeight <= 0) {
         alert("Please provide a positive number");
@@ -79,6 +89,8 @@ document.getElementById("card-six-btn").addEventListener("click", function () {
     const element = getTextElement("problem-six-title");
     const cardSixthBase = document.getElementById("card-six-base").value;
     const cardSixthHeight = document.getElementById("card-six-height").value;
+    clearInputField("card-six-base");
+    clearInputField("card-six-height");
 
     if (isNaN(cardSixthBase) || isNaN(cardSixthHeight) || cardSixthBase <= 0 || cardSixthHeight <= 0) {
         alert("Please provide a positive number");

@@ -1,4 +1,4 @@
-function getTextElement(id) {     
+function getTextElement(id) {
     const element = document.getElementById(id).innerText;
     return element;
 }
@@ -15,4 +15,9 @@ function resultField(serial, title, problemResult) {
     </div>
     `
     calculationField.appendChild(li);
+}
+
+function clearInputField(id) {
+    const inputField = document.getElementById(id);
+    inputField.value = '';
 }
